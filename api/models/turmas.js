@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'turma_id'
       })
       Turmas.belongsTo(models.Pessoas, {
-        foreignKey: 'estudante_id'
+        foreignKey: 'docente_id'
       });
       Turmas.belongsTo(models.Niveis, {
         foreignKey: 'nivel_id'
@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     data_inicio: DataTypes.DATEONLY
   }, {
     sequelize,
+    paranoid: true,
     modelName: 'Turmas',
   });
   return Turmas;
