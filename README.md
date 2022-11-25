@@ -6,7 +6,7 @@
 ### Conceitos aprendidos
 - Criação de uma Api com o Sequelize
 - Criação de modelos, migrações e Seeders com o sequelize-cli
-- Utilização da Api express
+- Tabela ORM (Object-Relational Mapping)
 - Banco de dados relacionais (mySQL)
 
 ## Tecnologias
